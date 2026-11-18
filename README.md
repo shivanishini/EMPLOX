@@ -213,13 +213,13 @@ You must install dependencies for both the frontend (project root) and the backe
 
 ### Terminal 1 – Frontend Dependencies (Project Root):
 ```powershell
-cd C:\Users\saniy\OneDrive\Desktop\EMPLOX
+cd C:\Users\Asus\Downloads\EMPLOX> 
 npm install
 ```
 
 ### Terminal 2 – Backend Dependencies:
 ```powershell
-cd C:\Users\saniy\OneDrive\Desktop\EMPLOX\server
+cd C:\Users\Asus\Downloads\EMPLOX\server>
 npm install
 ```
 
@@ -241,7 +241,7 @@ This utility:
 
 #### Step 1: Start the Backend (Terminal 1)
 ```powershell
-cd C:\Users\saniy\OneDrive\Desktop\EMPLOX\server
+cd C:\Users\Asus\Downloads\EMPLOX\server>
 npm start
 ```
 *Expected console output:*
@@ -253,7 +253,7 @@ Default admin account created: admin@emplox.com (if fresh setup)
 
 #### Step 2: Start the Frontend (Terminal 2)
 ```powershell
-cd C:\Users\saniy\OneDrive\Desktop\EMPLOX
+cd C:\Users\Asus\Downloads\EMPLOX>
 npm run dev
 ```
 *Expected console output:*
@@ -277,10 +277,11 @@ The following demo accounts exist in the system:
 | Role | Email | Password | Linked Employee | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | **Admin** | `admin@emplox.com` | `admin123` | *None* | Full access to all administrative modules, approvals, payroll, and settings. |
-| **Employee** | `sani@emplox.com` | `employee123` | `EMP004` (Saniya Sahoo) | Access to Employee Portal: Mark Present, Check Out, view attendance & submit leaves. |
+
 | **Employee** | `shiv@emplox.com` | `employee123` | `EMP001` (Shivani S) | Access to Employee Portal: Mark Present, Check Out, view attendance & submit leaves. |
 | **Employee** | `ship@emplox.com` | `employee123` | `EMP002` (Shipra Sahoo) | Access to Employee Portal: Mark Present, Check Out, view attendance & submit leaves. |
 | **Employee** | `saz@emplox.com` | `employee123` | `EMP003` (Sazia Begum) | Access to Employee Portal: Mark Present, Check Out, view attendance & submit leaves. |
+| **Employee** | `sani@emplox.com` | `employee123` | `EMP004` (Saniya Sahoo) | Access to Employee Portal: Mark Present, Check Out, view attendance & submit leaves. |
 
 > All 4 default employee portal accounts are automatically seeded on server startup if not present.
 
@@ -329,9 +330,9 @@ The following demo accounts exist in the system:
 1.  **Login**:
     *   Navigate to `http://localhost:5173`.
     *   Select the **Employee** role tab.
-    *   Enter `sani@emplox.com` and `employee123`.
+    *   Enter `shiv@emplox.com` and `employee123`.
 2.  **Dashboard Header**:
-    *   View your employee name, ID (`EMP004`), department, designation, and a live Indian Standard Time (IST) clock.
+    *   View your employee name, ID (`EMP001`), department, designation, and a live Indian Standard Time (IST) clock.
 3.  **Mark Present (Check-In)**:
     *   On the **Attendance** tab, click **Mark Present**.
     *   If checked in at or before `09:10:00 AM IST`, attendance status is recorded as **`Present`**.
@@ -559,4 +560,4 @@ JOIN employees e ON e.id = p.employee_id;
 4. [ ] **Dependencies**: Run `npm install` in both the root folder and `server/` folder.
 5. [ ] **Launch**: Run `.\START_EMPLOX.bat` (or start backend with `npm start` and frontend with `npm run dev`).
 6. [ ] **Test Admin**: Login at `http://localhost:5173` with `admin@emplox.com` / `admin123`.
-7. [ ] **Test Employee**: Login at `http://localhost:5173` with `sani@emplox.com` / `employee123`.
+7. [ ] **Test Employee**: Login at `http://localhost:5173` with `shiv@emplox.com` / `employee123`.
