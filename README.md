@@ -1,54 +1,70 @@
-# EMPLOX – Employee Management System
+# EMPLOX – Human Resource Management System
 
-A full-stack Employee Management and Attendance System built with **React (Vite)** on the frontend, **Node.js (Express)** on the backend, and **MySQL** as the relational database. EMPLOX features dedicated, role-protected portals for **Administrators** and **Employees**, offering real-time attendance management, Indian Standard Time (IST) time-tracking, automated overtime calculation, multi-day leave workflows, monthly payroll generation, candidate job applications tracking, and department/role administration.
-
----
-
-## 1. Project Overview
-
-EMPLOX simplifies workplace operations by segregating administrative control from employee self-service:
-
-*   **Admin Portal**:
-    *   **Dashboard**: Real-time KPI summary cards showing Total Employees, Present Today, Late Today, On Leave, Total Departments, Pending Leaves, and Total Overtime.
-    *   **Employee Management**: Add, view, search, edit, and activate/deactivate employee records with dynamic role and department assignments.
-    *   **Attendance Management**: Monitor attendance records with multi-criteria filtering (by employee, date range, and status), manual attendance entry/update modal, and overtime tracking.
-    *   **Leave Requests**: Review employee leave applications, view day calculations, and Approve or Reject requests (Approved leaves automatically synchronize into attendance as "On Leave").
-    *   **Payroll**: Run monthly payroll across all active employees, adjust allowances and deductions, calculate net salary, and mark payments as "Paid".
-    *   **Job Applications**: Track recruitment candidates through the hiring pipeline (Pending, Shortlisted, Rejected, Hired).
-    *   **Departments & Roles**: Manage organizational hierarchy with dedicated CRUD interfaces.
-*   **Employee Portal**:
-    *   **Live IST Clock**: Displays current time synced to Indian Standard Time (UTC+05:30).
-    *   **One-Click Check-In ("Mark Present")**: Records daily check-in time with automatic arrival validation (cutoff at 09:10 AM IST).
-    *   **Check-Out & Overtime**: Records departure time and automatically computes overtime minutes for work completed past 07:10 PM IST.
-    *   **Monthly Summary Stats**: Quick view of monthly Present days, Late days, On-Leave days, and cumulative Overtime hours.
-    *   **Leave Application & History**: Apply for leave (Casual, Sick, Earned, Unpaid) with date range selection and track real-time approval status.
+<p align="center">
+  <strong>A smarter way to manage employees and HR operations.</strong>
+</p>
 
 ---
 
-## 2. Tech Stack
+## 📌 About the Project
+
+EMPLOX is a full-stack Human Resource Management System designed to simplify employee management and streamline HR operations through a centralized dashboard.
+
+The project focuses on organizing employee data, managing access based on roles, and providing a structured platform for HR-related activities.
+
+---
+
+## ✨ Features
+
+- 🔐 Authentication and secure login
+- 👥 Employee management
+- 🏢 Department management
+- 📋 Employee directory
+- 🕒 Attendance management
+- 👤 Role-based access control
+- 📊 Centralized dashboard
+- 🔒 Protected API endpoints
+
+---
+
+## 🛠️ Tech Stack
 
 ### Frontend
-*   **Framework**: [React 18.3.1](https://react.dev/)
-*   **Build Tool**: [Vite 5.4.10](https://vitejs.dev/)
-*   **Routing**: [React Router DOM 7.18.2](https://reactrouter.com/)
-*   **HTTP Client**: [Axios 1.19.0](https://axios-http.com/)
-*   **Styling**: Custom Vanilla CSS Design System with responsive grid layouts, glassmorphic UI elements, and modern typography.
+- React
+- JavaScript
+- CSS
 
 ### Backend
-*   **Runtime**: [Node.js](https://nodejs.org/) (ES Modules & CommonJS compatibility)
-*   **Web Framework**: [Express 5.2.1](https://expressjs.com/)
-*   **Database Client**: [mysql2 3.23.3](https://github.com/sidorares/node-mysql2) (Promise-based connection pool)
-*   **Authentication**: [JSON Web Tokens (jsonwebtoken 9.0.3)](https://github.com/auth0/node-jsonwebtoken) with Bearer token authentication (8-hour expiration)
-*   **Security & Encryption**: [bcryptjs 3.0.3](https://github.com/dcodeIO/bcrypt.js) for salted password hashing
-*   **CORS**: [cors 2.8.6](https://github.com/expressjs/cors)
-*   **Environment Management**: [dotenv 17.4.2](https://github.com/motdotla/dotenv)
+- Node.js
+- Express.js
+- REST API
 
 ### Database
-*   **Engine**: MySQL 8.0+
-*   **Default Database Name**: `employee_management`
-*   **Charset**: `utf8mb4`
+- MySQL
+
+### Security
+- JWT authentication
+- Password hashing with bcrypt
+- API rate limiting
 
 ---
+
+## 🏗️ Architecture
+
+```text
+EMPLOX
+│
+├── Frontend
+│   └── React
+│       └── UI & Dashboard
+│
+├── Backend
+│   └── Node.js + Express
+│       └── REST API
+│
+└── Database
+    └── MySQL
+        └── Employee & HR Data
 
 ## 3. Prerequisites
 
